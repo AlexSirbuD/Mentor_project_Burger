@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Pattaya' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="root">
+    <section class="section1">
+      <div class="header">
+        <h2 class="header_text">CRAFT YOUR BURGER</h2>
+        <img class="logo" src="./img/logo.svg" alt="">
+        <img class="background" src="./img/craft-burger-bg.jpg" alt="">
+      </div>
+    </section>
+    <section class="section2">
+      <div class="main_container">
+        <div class="menu_left">
+
+          <div class="menu_choise">
+            <p class="label">1.BUN</p>
+            <div class="menu_box" id="box_bun" data-clone-counter="1">
+              <div class="menu_name">
+                <div class="selected_text">
+                  BRIOCHE BUN(8 lei)
+                </div>
+              </div>
+              <div class="menu_arrow">
+                <div class="arrow"></div>
+              </div>
+              <div class="dropdown_list first_list hidden ">
+                <ul>
+                  <li data-addongrams="60" data-addonprice="8" class="selected">BRIOCHE BUN(8 lei)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu_choise">
+            <p class="label">2. MEAT</p>
+            <div class="menu_box box_meat" data-clone-counter="2">
+              <div class="menu_name">
+                <div class="selected_text">
+                  BEEF PATTY (35 lei)
+                </div>
+              </div>
+              <div class="menu_arrow">
+                <div class="arrow"></div>
+              </div>
+              <div class="dropdown_list hidden">
+                <ul>
+                  <li data-addongrams="150" data-addonprice="35" data-ingr="vita" class="selected">BEEF PATTY (35
+                    lei)</li>
+                  <li data-addongrams="100" data-addonprice="25" data-ingr="pui">BREADED CHICKEN FILLET (25 lei)
+                  </li>
+                  <li data-addongrams="100" data-addonprice="25" data-ingr="pui">GRILLED CHICKEN FILLET (25 lei)
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="add_item" id="add_meat">
+              <div class="icon"><span class="icon_plus">+</span></div>
+              <span class="icon_text">ADD ITEM</span>
+            </div>
+          </div>
+
+          <div class="menu_choise">
+            <p class="label">3. BOTTOM SAUCE</p>
+            <div class="menu_box" id="box_bottom--souce" data-clone-counter="3">
+              <div class="menu_name">
+                <div class="selected_text">
+                  -
+                </div>
+              </div>
+              <div class="menu_arrow">
+                <div class="arrow"></div>
+              </div>
+              <div class="dropdown_list hidden">
+                <ul data-section="BOTTOM SAUCE">
+                  <li data-addongrams="0" data-addonprice="0" data-section="BOTTOM SAUCE" data-ingr="0">-</li>
+                  <li data-addongrams="20" data-addonprice="4" data-ingr="souce-red">KETCHUP (4 lei)</li>
+                  <li data-addongrams="30" data-addonprice="4" data-ingr="souce-yellow">TARTAR SAUCE (4 lei)</li>
+                  <li data-addongrams="20" data-addonprice="4" data-ingr="souce-white" class="selected">MAYONNAISE (4
+                    lei)</li>
+                  <li data-addongrams="20" data-addonprice="4" data-ingr="souce-yellow">GARLIC&amp;BBQ (4 lei)</li>
+                  <li data-addongrams="20" data-addonprice="6" data-ingr="souce-red">SRIRACHA (spicy) (6 lei)</li>
+                  <li data-addongrams="20" data-addonprice="4" data-ingr="souce-yellow">CLASSY SAUCE (4 lei)</li>
+                  <li data-addongrams="20" data-addonprice="4" data-ingr="souce-yellow">GARLIC SAUCE (4 lei)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="add_item">
+              <div class="icon"><span class="icon_plus">+</span></div>
+              <span class="icon_text">ADD ITEM</span>
+            </div>
+          </div>
+
+          <div class="menu_choise">
+            <p class="label">4. TOP SAUCE</p>
+            <div class="menu_box" id="box_top--souce" data-clone-counter="4">
+              <div class="menu_name">
+                <div class="selected_text">
+                  -
+                </div>
+              </div>
+              <div class="menu_arrow">
+                <div class="arrow"></div>
+              </div>
+              <div class="dropdown_list hidden">
+                <ul data-section="TOP SAUCE">
+                  <li data-addongrams="0" data-addonprice="0" data-section="TOP SAUCE" data-ingr="0">-</li>
+                  <li data-addongrams="20" data-addonprice="4" data-ingr="top-souce-yellow">GARLIC SAUCE (4 lei)</li>
+                  <li data-addongrams="30" data-addonprice="4" data-ingr="top-souce-yellow">TARTAR SAUCE (4 lei)</li>
+                  <li data-addongrams="20" data-addonprice="4" data-ingr="top-souce-red">KETCHUP (4 lei)</li>
+                  <li data-addongrams="20" data-addonprice="4" data-ingr="top-souce-white">MAYONNAISE (4 lei)</li>
+                  <li data-addongrams="20" data-addonprice="4" data-ingr="top-souce-yellow">GARLIC&amp;BBQ (4 lei)</li>
+                  <li data-addongrams="20" data-addonprice="6" data-ingr="top-souce-red">SRIRACHA (spicy) (6 lei)</li>
+                  <li data-addongrams="20" data-addonprice="4" data-ingr="top-souce-yellow">CLASSY SAUCE (4 lei)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="add_item">
+              <div class="icon"><span class="icon_plus">+</span></div>
+              <span class="icon_text">ADD ITEM</span>
+            </div>
+          </div>
+
+          <div class="menu_choise">
+            <p class="label">5. CHEESE</p>
+            <div class="menu_box" id="box_cheese" data-clone-counter="5">
+              <div class="menu_name">
+                <div class="selected_text">
+                  -
+                </div>
+              </div>
+              <div class="menu_arrow">
+                <div class="arrow"></div>
+              </div>
+              <div class="dropdown_list hidden">
+                <ul data-section="CHEESE">
+                  <li data-addongrams="0" data-addonprice="0" data-section="CHEESE" data-ingr="0">-</li>
+                  <li data-addongrams="20" data-addonprice="12" data-ingr="cheddar">"CHEDDAR" CHEESE (12 lei)</li>
+                  <li data-addongrams="25" data-addonprice="15" data-ingr="dorblu">DORBLU CHEESE (15 lei)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="add_item">
+              <div class="icon"><span class="icon_plus">+</span></div>
+              <span class="icon_text">ADD ITEM</span>
+            </div>
+          </div>
+
+          <div class="menu_choise">
+            <p class="label">6. TOPPINGS</p>
+            <div class="menu_box" id="box_toppings" data-clone-counter="6">
+              <div class="menu_name">
+                <div class="selected_text">
+                  -
+                </div>
+              </div>
+              <div class="menu_arrow">
+                <div class="arrow"></div>
+              </div>
+              <div class="dropdown_list hidden">
+                <ul data-section="TOPPINGS">
+                  <li data-addongrams="0" data-addonprice="0" data-section="TOPPINGS" data-ingr="0">-</li>
+                  <li data-addongrams="10" data-addonprice="12" data-ingr="bacon-crocant">CRISPY BACON (12 lei)</li>
+                  <li data-addongrams="40" data-addonprice="10" data-ingr="ou-prajit">FRIED EGG (10 lei)</li>
+                  <li data-addongrams="10" data-addonprice="2" data-ingr="ceapa-marinata">MARINATED ONION (2 lei)</li>
+                  <li data-addongrams="20" data-addonprice="4" data-ingr="ceapa-caramelizata">CARAMEL ONION (4 lei)</li>
+                  <li data-addongrams="30" data-addonprice="4" data-ingr="castraveti-murati">PICKLES (4 lei)</li>
+                  <li data-addongrams="20" data-addonprice="4" data-ingr="castraveti-proaspeti">CUCUMBER (4 lei)</li>
+                  <li data-addongrams="40" data-addonprice="5" data-ingr="rosii">TOMATO (5 lei)</li>
+                  <li data-addongrams="15" data-addonprice="5" data-ingr="salata-iceberg">ICEBERG LETTUCE (5 lei)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="add_item">
+              <div class="icon"><span class="icon_plus">+</span></div>
+              <span class="icon_text">ADD ITEM</span>
+            </div>
+          </div>
+
+          <div class="menu_choise">
+
+            <div class="menu_input">
+              <div>
+                <input class="selected_text" type="text" placeholder="Name your burger 🍔">
+              </div>
+
+            </div>
+
+          </div>
+          <hr class="yellow_line">
+
+          <div class="total_info">
+
+            <div class="total_data total_1BUN" data-clone-counter="1">
+              <span class="total_name">BRIOCHE BUN :</span>
+              <span class="total_price">8 LEI</span>
+              <span class="total_grams">(60 gr)</span>
+            </div>
+
+            <div class="total_data total_2_MEAT" data-clone-counter="2">
+              <span class="total_name">BEEF PATTY :</span>
+              <span class="total_price">35 LEI</span>
+              <span class="total_grams">(150 gr)</span>
+            </div>
+
+            <div class="total_data fade_left total_3_BOTTOM_SAUCE hidden" data-clone-counter="3">
+              <span class="total_name"></span>
+              <span class="total_price"></span>
+              <span class="total_grams"></span>
+            </div>
+            <div class="total_data fade_left total_4_TOP_SAUCE hidden" data-clone-counter="4">
+              <span class="total_name"></span>
+              <span class="total_price"></span>
+              <span class="total_grams"></span>
+            </div>
+            <div class="total_data fade_left total_5_CHEESE hidden" data-clone-counter="5">
+              <span class="total_name"></span>
+              <span class="total_price"></span>
+              <span class="total_grams"></span>
+            </div>
+            <div class="total_data fade_left total_6_TOPPINGS hidden" data-clone-counter="6">
+              <span class="total_name"></span>
+              <span class="total_price"></span>
+              <span class="total_grams"></span>
+            </div>
+
+          </div>
+          <div class="total_data total_sum">
+            <span class="total_name">TOTAL :</span>
+            <span class="total_price_sum">43 LEI</span>
+            <span class="total_grams_sum">(210 gr)</span>
+          </div>
+
+
+          <div class="buttons">
+            <button class="btn add_card">ADD TO CARD</button>
+            <button class="btn start_scratch">START FROM SCRATCH</button>
+          </div>
+
+        </div>
+
+        <div class="menu_right">
+
+          <div class="images">
+            <div class="burger_img burger_top">
+              <span class="burger_text text_right">brioche bun</span>
+              <img src="./img/asset-1.svg" alt="BRIOCHE BUN" title="BRIOCHE BUN">
+            </div>
+            <div class="add_images">
+
+            </div>
+
+            <div class="burger_img burger_middle">
+              <span class="burger_text text_left">BEEF PATTY</span>
+              <img src="./img/pirjoala-de-vita.svg" alt="BEEF PATTY" title="BEEF PATTY">
+            </div>
+
+            <div class="burger_img burger_bottom">
+              <span class="burger_text text_right">brioche bun</span>
+              <img src="./img/asset-23.svg" alt="BRIOCHE BUN" title="BRIOCHE BUN">
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
